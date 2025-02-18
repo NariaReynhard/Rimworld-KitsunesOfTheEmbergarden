@@ -13,6 +13,8 @@
         <factionlessGenerationWeight>0</factionlessGenerationWeight>
         <genes>
             <li>Cinder_ErosionEyes</li>
+            <li>AFU_HA_FoxEar</li>
+            <li>AFU_BA_FluffyFoxTail</li>
         </genes>
     </XenotypeDef>
 </Defs>

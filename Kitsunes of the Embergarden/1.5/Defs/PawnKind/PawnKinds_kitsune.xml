@@ -75,5 +75,5 @@
 				<apparelLayer>OnSkin</apparelLayer>
 			</li>
 		</specificApparelRequirements>
-    </pawnKindDef>
+    </PawnKindDef>
 </Defs>

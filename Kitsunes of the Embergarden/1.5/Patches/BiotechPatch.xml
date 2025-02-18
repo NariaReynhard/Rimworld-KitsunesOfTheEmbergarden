@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>//ScenarioDef[defName="KotE_Scenario"]//li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]</xpath>
+        <value>
+            <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                <def>ConfigurePawnsXenotypes</def>
+                <pawnChoiceCount>3</pawnChoiceCount>
+                <customSummary>Start with two cinders and a kitsune</customSummary>
+                <overrideKinds>
+                    <li>
+                        <xenotype>Cinder_Xenotype</xenotype>
+                        <pawnKind>Cinder_Colonist</pawnKind>
+                    </li>
+                    <li>
+                        <xenotype>Kitsune_Xenotype</xenotype>
+                        <pawnKind>Kitsune_Colonist</pawnKind>
+                    </li>
+                </overrideKinds>
+                <xenotypeCounts>
+                    <li>
+                        <xenotype>Cinder_Xenotype</xenotype>
+                        <count>2</count>
+                        <description>Adult Cinder</description>
+                        <requiredAtStart>true</requiredAtStart>
+                        <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+                    </li>
+                    <li>
+                        <xenotype>Kitsune_Xenotype</xenotype>
+                        <count>1</count>
+                        <description>Adult Kitsune</description>
+                        <requiredAtStart>true</requiredAtStart>
+                        <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+                    </li>
+                </xenotypeCounts>
+            </li>
+        </value>
+    </Operation>
+</Patch>

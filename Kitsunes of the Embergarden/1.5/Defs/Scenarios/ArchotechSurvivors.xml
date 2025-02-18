@@ -11,37 +11,11 @@
                 <factionDef>Cinder_PlayerFaction</factionDef>
             </playerFaction>
             <parts>
-                <li>
-                    <def>ConfigurePawnsXenotype</def>
-                    <pawnChoiceCount>3</pawnChoiceCount>
-                    <customSummary>Start with two cinders and a kitsune</customSummary>
-                    <overrideKinds>
-                        <li>
-                            <xenotype>Cinder_Xenotypes</xenotype>
-                            <pawnKind>Cinder_Colonist</pawnKind>
-                        </li>
-                        <li>
-                            <xenotype>Kitsune_Xenotype</xenotype>
-                            <pawnKind>Kitsune_Colonist</pawnKind>
-                        </li>
-                    </overrideKinds>
-                    <xenotypeCounts>
-                        <li>
-                            <xenotype>Cinder_Xenotype</xenotype>
-                            <count>2</count>
-                            <description>Adult Cinder</description>
-                            <requiredAtStart>true</requiredAtStart>
-                            <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
-                        </li>
-                        <li>
-                            <xenotype>Kitsune_Xenotype</xenotype>
-                            <count>1</count>
-                            <description>Adult Kitsune</description>
-                            <requiredAtStart>true</requiredAtStart>
-                            <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
-                        </li>
-                    </xenotypeCounts>
-                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
                     <def>PlayerPawnsArriveMethod</def>
                 </li>
