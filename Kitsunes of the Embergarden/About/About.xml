@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Kitsunes of the Embergarden</name>
+    <author>Naria Savary</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>NariaSavary.EmbergardenKitsunes</packageId>
+    <description>
+        This mod is an extension of "Cinders of the Embergarden" that adds a new Cinders faction, a new Xenotype fitting the original mod theme and mecanics and a new Scenario as well as some complementary lore.
+        Made with the authorization and help of the original mod authors
+    </description>
+    <modDependencies>
+        <li>
+            <packageId>ludeon.rimworld.biotech</packageId>
+            <displayName>Biotech</displayName>
+        </li>
+        <li>
+            <packageId>breadmo.cinders</packageId>
+            <displayName>Cinders of the EmberGarden</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3421959154</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>jintuzilamian.gene.xenocosmetic</packageId>
+            <displayName></displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2880942803</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>breadmo.cinders</li>
+        <li>jintuzilamian.gene.xenocosmetic</li>
+    </loadAfter>
+</ModMetaData>
