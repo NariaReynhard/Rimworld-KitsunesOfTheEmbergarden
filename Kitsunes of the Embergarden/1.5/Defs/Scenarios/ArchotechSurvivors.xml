@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef>
+        <defName>KotE_Scenario</defName>
+        <label>Lost group of survivors</label>
+        <description>After the catastrophic landing on the planet, a lot of little groups from the Archotech Coalition settled up on the planet, trying to rebuild on their own. You were part of an outpost in a mountain chain, but when you settled you didn't realize you were in the middle of a pirate territory and they were unhappy of such a military presence. After decades of fighting, your defense fell. You were two cinders to wake up of your coma, hidden in a shellhole. You took what you could and find a Kitsune who survived in the underground, the entrance crumbled from a mortar shell. After getting them out of their stone tumb, you all together gather what pirates couldn't take with them. You tried to sneak out of the cluster and after weeks of walking, your food supplies are running low. You can't go further, you have to settle up and pursue your people mission.</description>
+        <scenario>
+            <summary>Two cinders and a kitsune who survived their outpost</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>Cinder_PlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>3</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>50</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>10</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
