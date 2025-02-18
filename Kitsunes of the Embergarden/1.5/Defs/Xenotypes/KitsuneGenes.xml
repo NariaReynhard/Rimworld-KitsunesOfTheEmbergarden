@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneDef ParentName="Cinder_UncontrollableTentacle">
+        <defName>Kitsune_UncontrollableTentacle</defName>
+        <label>Uncontrollable tentacles (kitsune)</label>
+        <modExtensions>
+            <li Class="Embergarden.ModExtension_GeneAddHediff">
+                <HediffDef>Kitsune_UncontrollableTentacles</HediffDef>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>
