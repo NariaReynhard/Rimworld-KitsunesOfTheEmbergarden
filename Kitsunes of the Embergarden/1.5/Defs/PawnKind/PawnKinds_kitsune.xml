@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef Name="Kitsune_BasePawn" Abstract="True">
+        <combatPower>40</combatPower>
+        <race>Human</race>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+        <apparelMoney>
+            <min>100</min>
+            <max>1200</max>
+        </apparelMoney>
+        <initialWillRange>5~10</initialWillRange>
+        <initialResistanceRange>10~40</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Kitsune_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Kitsune_Xenotype>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li Class="Embergarden.ModExtension_NoIdeoApparel" />
+        </modExtensions>
+        <startingHediffs />
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Kitsune_BasePawn">
+        <defName>Kitsune_Colonist</defName>
+        <label>colonist</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <itemQuality>Poor</itemQuality>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <isFighter>false</isFighter>
+        <initialWillRange>10~20</initialWillRange>
+        <invNutrition>1</invNutrition>
+        <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+        <maxGenerationAge>55</maxGenerationAge>
+        <minGenerationAge>13</minGenerationAge>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_ESDSP_Worker</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelTags>
+            <li>Cinder_Civilan</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>200</min>
+            <max>600</max>
+        </apparelMoney>
+        <specificApparelRequirements>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <stuff>Synthread</stuff>
+                <requiredTag>IndustrialBasic</requiredTag>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+            <li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>Cinder_Civilan</requiredTag>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(186, 181, 171)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+    </pawnKindDef>
+</Defs>
