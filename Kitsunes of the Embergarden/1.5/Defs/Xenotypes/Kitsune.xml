@@ -13,7 +13,7 @@
         <factionlessGenerationWeight>0</factionlessGenerationWeight>
         <genes>
             <!--Aesthetic-->
-            <li>Beard NoBeardOnly</li>
+            <li>Beard_NoBeardOnly</li>
             <li>Cinder_Fin</li>
             <li>Cinder_BlackHair</li>
             <li>Cinder_LowBlackHair</li>
