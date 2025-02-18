@@ -12,9 +12,23 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <factionlessGenerationWeight>0</factionlessGenerationWeight>
         <genes>
-            <li>Cinder_ErosionEyes</li>
+            <!--Aesthetic-->
+            <li>Beard NoBeardOnly</li>
+            <li>Cinder_Fin</li>
+            <li>Cinder_BlackHair</li>
+            <li>Cinder_LowBlackHair</li>
+            <li>Cinder_WhiteHair</li>
+            <li>Cinder_BrownHair</li>
             <li>AFU_HA_FoxEar</li>
             <li>AFU_BA_FluffyFoxTail</li>
+            <li>Body_Standard</li>
+            <li>CinderHead_Female</li>
+            <li>Hands_Human</li>
+            <li>Skin_SheerWhite</li>
+            <!--Cinder origin-->
+            <li>Cinder_ErosionEyes</li>
+            <li>Cinder_UncontrollableTentacle</li>
+            <!--Kitsune specific-->
         </genes>
     </XenotypeDef>
 </Defs>
