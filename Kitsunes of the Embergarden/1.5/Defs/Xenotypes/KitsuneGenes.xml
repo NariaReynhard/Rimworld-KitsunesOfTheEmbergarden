@@ -1,12 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-    <GeneDef ParentName="Cinder_UncontrollableTentacle">
-        <defName>Kitsune_UncontrollableTentacle</defName>
-        <label>Uncontrollable tentacles (kitsune)</label>
-        <modExtensions>
-            <li Class="Embergarden.ModExtension_GeneAddHediff">
-                <HediffDef>Kitsune_UncontrollableTentacles</HediffDef>
-            </li>
-        </modExtensions>
-    </GeneDef>
-</Defs>
+<description>Carriers of this gene will grow uncontrollable tentacle.</description>
+	 <displayCategory>Miscellaneous</displayCategory>
+    <randomChosen>true</randomChosen>
+	<geneClass>Embergarden.Gene_AddHediff</geneClass>
+    <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
+	<selectionWeight>1.5</selectionWeight>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <biostatCpx>4</biostatCpx>
+    <biostatMet>4</biostatMet>
+	 <exclusionTags>
+      <li>CinderTentacle</li>
+    </exclusionTags>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPaths>
+		<li>Things/Pawn/Humanlike/Body/CinderTentacle/CinderTentacle</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleA</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleB</li>
+		</texPaths>
+        <colorType>Skin</colorType>
+        <overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+           <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+             <offset>(0, 0,0.05)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0, 0,0.05)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<minAgeActive>0</minAgeActive>
