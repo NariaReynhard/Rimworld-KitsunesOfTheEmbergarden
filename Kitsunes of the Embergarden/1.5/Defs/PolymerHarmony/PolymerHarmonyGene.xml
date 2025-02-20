@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<Defs>
+    <GeneDef>
+        <defName>PolymerHarmony_Aura</defName>
+        <label>Polymer Harmony Aura</label>
+        <description>Carriers of this gene have a benefic presence for nearby cinders</description>
+        <displayCategory>Miscellaneous</displayCategory>
+        <randomChosen>true</randomChosen>
+        <geneClass>KotE.PolymerHarmonyGene</geneClass>
+        <iconPath><!--No art for this yet--></iconPath>
+        <selectionWeight>1.5</selectionWeight>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <minAgeActive>7</minAgeActive>
+        <passive>true</passive>
+        <modExtensions>
+        <li Class="KotE.ModExtension_RequireXenotype">
+            <requiredXenotypes>
+                <li>Kitsune_Xenotype</li>
+            </requiredXenotypes>
+        </li>
+        <li Class="KotE.ModExtension_GeneEmitsAura">
+            <auraEffect>PolymerHarmony_Effect</auraEffect>
+            <radius>6</radius>
+            <affectsXenotypes>
+                <li>Cinder_Xenotype</li>
+            </affectsXenotypes>
+        </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

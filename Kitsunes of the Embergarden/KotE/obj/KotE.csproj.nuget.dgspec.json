@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Naria Savary\\Desktop\\Rimworld modding\\KotE\\Rimworld-KitsunesOfTheEmbergarden\\Kitsunes of the Embergarden\\KotE\\KotE.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Naria Savary\\Desktop\\Rimworld modding\\KotE\\Rimworld-KitsunesOfTheEmbergarden\\Kitsunes of the Embergarden\\KotE\\KotE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Naria Savary\\Desktop\\Rimworld modding\\KotE\\Rimworld-KitsunesOfTheEmbergarden\\Kitsunes of the Embergarden\\KotE\\KotE.csproj",
+        "projectName": "KotE",
+        "projectPath": "C:\\Users\\Naria Savary\\Desktop\\Rimworld modding\\KotE\\Rimworld-KitsunesOfTheEmbergarden\\Kitsunes of the Embergarden\\KotE\\KotE.csproj",
+        "packagesPath": "C:\\Users\\Naria Savary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Naria Savary\\Desktop\\Rimworld modding\\KotE\\Rimworld-KitsunesOfTheEmbergarden\\Kitsunes of the Embergarden\\KotE\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Naria Savary\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

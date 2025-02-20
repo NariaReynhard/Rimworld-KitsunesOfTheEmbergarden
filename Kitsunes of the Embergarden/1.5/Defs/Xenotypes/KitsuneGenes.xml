@@ -56,33 +56,4 @@
             </li>
         </modExtensions>
   </GeneDef>
-    
-  <GeneDef>
-    <defName>PolymerHarmony_Aura</defName>
-    <label>Polymer Harmony Aura</label>
-    <description>Carriers of this gene have a benefic presence for nearby cinders</description>
-    <displayCategory>Miscellaneous</displayCategory>
-    <randomChosen>true</randomChosen>
-    <geneClass>Gene<!--TODO : Update this when coded in C#--></geneClass>
-    <iconPath><!--No art for this yet--></iconPath>
-    <selectionWeight>1.5<!--copied from the previous gene but I have no idea if that makes sense or if it should be modified--></selectionWeight>
-    <biostatCpx>5</biostatCpx>
-    <biostatMet>-3</biostatMet>
-    <minAgeActive>7</minAgeActive>
-    <passive>true</passive>
-    <modExtensions>
-      <li Class="Embergarden.ModExtension_RequireXenotype">
-        <requiredXenotypes>
-          <li>Kitsune_Xenotype</li>
-        </requiredXenotypes>
-      </li>
-      <li Class="Embergarden.ModExtension_GeneEmitsAura">
-        <auraEffect>PolymerHarmony_Effect</auraEffect>
-        <radius>6</radius>
-        <affectsXenotypes>
-          <li>Cinder_Xenotype</li>
-        </affectsXenotypes>
-      </li>
-    </modExtensions>
-  </GeneDef>
 </Defs>
