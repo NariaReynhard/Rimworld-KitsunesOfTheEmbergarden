@@ -4,13 +4,13 @@
         <defName>PolymerHarmonyNeed</defName>
         <label>Polymer Harmony exposure</label>
         <description>Represents the exposure of a Cinder to a Kitsune's harmonizing aura</description>
-        <needClass>need_seeker</needClass>
+        <needClass>Need_DrugLike</needClass>
         <category>Addiction</category>
         <neverOnHumans>true</neverOnHumans>
         <baseLevel>0.5</baseLevel>
         <majorThreshold>0.8</majorThreshold>
         <seekerRisePerHour>0.002</seekerRisePerHour>
-        <fallPerHour>0.25</seekerRisePerHour>
+        <fallPerHour>0.25</fallPerHour>
         <freezeWhileSleeping>false</freezeWhileSleeping>
     </NeedDef>
 </Defs>

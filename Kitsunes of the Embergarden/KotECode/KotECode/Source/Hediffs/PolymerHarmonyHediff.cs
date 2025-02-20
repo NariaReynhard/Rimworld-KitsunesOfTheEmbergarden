@@ -1,34 +1,67 @@
 using RimWorld;
 using Verse;
+using System.Collections.Generic;
 
 namespace KitsunesOfTheEmbergarden
 {
     public class PolymerHarmonyHediff : HediffWithComps
     {
-        // Called when the hediff is first added to a pawn
-        public override void PostAdd(DamageInfo? dinfo)
-        {
-            base.PostAdd(dinfo);
-            // TODO: Initialize any necessary values
-        }
+        private const float auraRange = 6f; // Adjust this value if needed
 
-        // Called every game tick to update the hediff's effects
-        public override void Tick()
-        {
-            base.Tick();
-            // TODO: Handle exposure increase and withdrawal mechanics
-        }
-
-        // Modifies the pawn's health stats based on severity
         public override void PostTick()
         {
             base.PostTick();
-            // TODO: Apply buffs/debuffs depending on severity
-            Need polymerHarmonyNeed = pawn.needs?.TryGetNeed(DefDatabase<NeedDef>.GetNamed("PolymerHarmonyNeed"));
-            if(polymerHarmonyNeed == null) return;
+
+            if (pawn == null || pawn.Map == null)
+                return;
+
+            // Check if any Kitsune is in range
+            bool inAura = IsPawnInKitsuneAura(pawn);
+
+            if (inAura)
+            {
+                ApplyPolymerHarmonyEffect();
+            }
+            else
+            {
+                RemovePolymerHarmonyEffect();
+            }
         }
 
-        // Determines whether the hediff should be removed
-        public override bool ShouldRemove => false; // This is a permanent hediff
+        private bool IsPawnInKitsuneAura(Pawn cinder)
+        {
+            foreach (Pawn otherPawn in cinder.Map.mapPawns.AllPawns)
+            {
+                if (otherPawn != cinder && IsKitsuneWithAura(otherPawn) && cinder.Position.DistanceTo(otherPawn.Position) <= auraRange)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool IsKitsuneWithAura(Pawn pawn)
+        {
+            return pawn.genes?.GetGene(DefDatabase<GeneDef>.GetNamed("PolymerHarmony_Aura")) != null;
+        }
+
+        private void ApplyPolymerHarmonyEffect()
+        {
+            HediffDef harmonyEffect = DefDatabase<HediffDef>.GetNamed("PolymerHarmony_Effect");
+            if (!pawn.health.hediffSet.HasHediff(harmonyEffect))
+            {
+                pawn.health.AddHediff(HediffMaker.MakeHediff(harmonyEffect, pawn));
+            }
+        }
+
+        private void RemovePolymerHarmonyEffect()
+        {
+            HediffDef harmonyEffect = DefDatabase<HediffDef>.GetNamed("PolymerHarmony_Effect");
+            Hediff existingHediff = pawn.health.hediffSet.GetFirstHediffOfDef(harmonyEffect);
+            if (existingHediff != null)
+            {
+                pawn.health.RemoveHediff(existingHediff);
+            }
+        }
     }
 }
