@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KotE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+299a680a690f1f3412b4fe61f1e9160d0f2db7b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bb84dc3e8aa9931359afeea6726313a00d5508e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KotE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KotE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

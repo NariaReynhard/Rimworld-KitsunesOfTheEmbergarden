@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <OutputPath>..\Assemblies\</OutputPath>
+    <OutputPath>..\1.5\Assemblies\</OutputPath>
     <TargetFramework>net472</TargetFramework>
     <LangVersion>10.0</LangVersion>
   </PropertyGroup>
