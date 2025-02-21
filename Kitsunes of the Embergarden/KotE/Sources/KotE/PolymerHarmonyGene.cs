@@ -31,12 +31,12 @@ namespace KotE
 
     public class ModExtension_RequireXenotype : DefModExtension
     {
-        public XenotypeDef RequiredXenotype;
+        public XenotypeDef RequiredXenotypes;
 
         public bool PawnHasRequiredXenotype(Pawn pawn)
         {
             if(pawn?.genes==null) return false;
-            return pawn.genes.Xenotype==RequiredXenotype;
+            return pawn.genes.Xenotype==RequiredXenotypes;
         }
     }
 

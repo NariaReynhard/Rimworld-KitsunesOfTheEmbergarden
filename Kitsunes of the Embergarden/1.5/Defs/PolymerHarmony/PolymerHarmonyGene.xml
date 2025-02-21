@@ -12,12 +12,11 @@
         <biostatCpx>5</biostatCpx>
         <biostatMet>-3</biostatMet>
         <minAgeActive>7</minAgeActive>
-        <passive>true</passive>
         <modExtensions>
         <li Class="KotE.ModExtension_RequireXenotype">
-            <requiredXenotypes>
+            <RequiredXenotypes>
                 <li>Kitsune_Xenotype</li>
-            </requiredXenotypes>
+            </RequiredXenotypes>
         </li>
         <li Class="KotE.ModExtension_GeneEmitsAura">
             <auraEffect>PolymerHarmony_Effect</auraEffect>

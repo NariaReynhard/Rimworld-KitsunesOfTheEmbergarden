@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defaultLabelColor>(255, 255, 255)</defaultLabelColor>
+        <defName>PolymerHarmony_Effect</defName>
+        <label>Polymer Harmony</label>
+        <description>This Cinder is being Harmonized by a Kitsune aura</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <initialSeverity>0.01</initialSeverity>
+        <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+        <alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+        <stages>
+            <li>
+                <label>Soothed</label>
+                <minSeverity>0</minSeverity>
+                <painOffset>-0.1</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.03</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Relaxed</label>
+                <minSeverity>0.15</minSeverity>
+                <painOffset>-0.2</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.06</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>In control</label>
+                <minSeverity>0.4</minSeverity>
+                <painOffset>-0.3</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.09</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Harmonized</label>
+                <minSeverity>0.85</minSeverity>
+                <painOffset>-0.4</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.09</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <renderNodeProperties />
+    </HediffDef>
+</Defs>

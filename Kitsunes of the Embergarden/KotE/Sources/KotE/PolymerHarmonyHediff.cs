@@ -9,8 +9,6 @@ namespace KotE
 {
     public class PolymerHarmonyHediff
     {
-        public HediffDef auraEffect;
-        public float radius;
-        public XenotypeDef affectsXenotypes;
+        
     }
 }
