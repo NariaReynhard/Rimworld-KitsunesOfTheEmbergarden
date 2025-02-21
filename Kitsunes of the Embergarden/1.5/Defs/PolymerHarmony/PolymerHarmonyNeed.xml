@@ -2,7 +2,7 @@
 <Defs>
     <NeedDef>
         <defName>Harmonized_Need</defName>
-        <needClass>PolymerHarmonyNeed</needClass>
+        <needClass>KotE.PolymerHarmonyNeed</needClass>
         <label>Harmony</label>
         <description>Because this pawn known harmony for a long time, they need to stay harmonized to avoid severe withdrawal symptoms</description>
         <listPriority>600</listPriority>

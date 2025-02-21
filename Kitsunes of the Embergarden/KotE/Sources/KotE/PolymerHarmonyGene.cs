@@ -5,11 +5,11 @@ namespace KotE
 {
     public class PolymerHarmonyGene : Gene
     {
-        ModExtension_RequireXenotype authorizedXenotypes => def.GetModExtension<ModExtension_RequireXenotype>();
-        ModExtension_GeneEmitsAura auraDatas => def.GetModExtension<ModExtension_GeneEmitsAura>();
+        ModExtension_RequireXenotype AuthorizedXenotypes => def.GetModExtension<ModExtension_RequireXenotype>();
+        ModExtension_GeneEmitsAura AuraDatas => def.GetModExtension<ModExtension_GeneEmitsAura>();
         public override void PostAdd()
         {
-            if (authorizedXenotypes.PawnHasRequiredXenotype(pawn)){
+            if (AuthorizedXenotypes.PawnHasRequiredXenotype(pawn)){
                 pawn.genes.RemoveGene(this);
             };
         }
@@ -17,13 +17,13 @@ namespace KotE
         public override void Tick()
         {
             base.Tick();
-            applyEffect();
+            ApplyEffect();
         }
         
-        private void applyEffect(){
+        private void ApplyEffect(){
             foreach (Pawn potentialSubject in pawn.Map.mapPawns.AllHumanlikeSpawned){
-                if (potentialSubject.Position.DistanceToSquared(pawn.Position)<=auraDatas.radius){
-                    potentialSubject.health.AddHediff(auraDatas.auraEffect);
+                if (potentialSubject.Position.DistanceToSquared(pawn.Position)<=AuraDatas.radius){
+                    potentialSubject.health.AddHediff(AuraDatas.auraEffect);
                 };
             }
         }

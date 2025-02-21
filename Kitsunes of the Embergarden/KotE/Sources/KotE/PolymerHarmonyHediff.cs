@@ -7,7 +7,7 @@ using Verse;
 
 namespace KotE
 {
-    public class PolymerHarmonyHediff
+    public class PolymerHarmonyHediff : Hediff
     {
         
     }
